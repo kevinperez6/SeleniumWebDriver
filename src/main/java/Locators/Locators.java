@@ -46,10 +46,9 @@ public class Locators {
         //WebElement passwordInput4 = driver.findElement(By.xpath("//*[@id=\"password\"]"));
         //WebElement loginButton4   = driver.findElement(By.xpath("//*[@id=\"login-button\"]"));
 
-        //Locar by Css
+        //Locator by Css
         //WebElement usernameInput5 = driver.findElement(By.cssSelector(".error"));
-        //WebElement passwordInput5 = driver.findElement(By.cssSelector("."));
-        //WebElement loginButton5 = driver.findElement(By.cssSelector("."));
+
 
         //Login
         usernameInput.sendKeys(username);
