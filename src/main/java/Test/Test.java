@@ -13,7 +13,7 @@ public class Test {
         /*_____________________________________________*/
 
         //Inicialize browser
-        System.setProperty("webdriver.chrome.driver","E:\\Programas\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","E:\\Programas\\Programas Selenium Web Driver\\chromedriver.exe");
 
         //OPEN PAGE
         driver.get("http://www.facebook.com");
