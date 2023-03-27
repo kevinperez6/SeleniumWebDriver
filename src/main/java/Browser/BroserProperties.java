@@ -8,6 +8,8 @@ public class BroserProperties {
     public static void main(String[] args) {
         /*_____________________________________________*/
         ChromeOptions options = new ChromeOptions();
+        //Browser Headless - no abre el navegador
+        options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
         //INITIALIZE THE WEBDRIVER
         WebDriver driver = new ChromeDriver(options);

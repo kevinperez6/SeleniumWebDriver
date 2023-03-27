@@ -8,6 +8,7 @@ public class BrowserPosition {
     public static void main(String[] args) {
         /*_____________________________________________*/
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
         //INITIALIZE THE WEBDRIVER
         WebDriver driver = new ChromeDriver(options);
