@@ -44,21 +44,33 @@ import java.util.Scanner;
 
 public class Loops {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Ingresa el primer dato: ");
-        String A=sc.next();
-        System.out.println("Ingresa el segundo dato: ");
-        String B=sc.next();
-        String c= A.substring(0,1).toUpperCase();
-        String d= B.substring(0,1).toUpperCase();
-        /* Enter your code here. Print output to STDOUT. */
-        System.out.println(A.length()+B.length());
-        if(A.compareTo(B) > 0){
-            System.out.println("Si");
-        }else{
-            System.out.println("No");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el primer número:");
+        double num1 = sc.nextDouble();
+        System.out.println("Ingrese el segundo número:");
+        double num2 = sc.nextDouble();
+        System.out.println("Seleccione la operación a realizar (suma(+), resta(-), multiplicación(*), división(/)):");
+        String operacion = sc.next();
+        double resultado = 0;
+        switch (operacion) {
+            case "+":
+                resultado = num1 + num2;
+                break;
+            case "-":
+                resultado = num1 - num2;
+                break;
+            case "*":
+                resultado = num1 * num2;
+                break;
+            case "/":
+                resultado = num1 / num2;
+                break;
+            default:
+                System.out.println("Operación inválida");
+                return;
         }
-        System.out.println(c+A.substring(1) + " " + d+B.substring(1));
+        System.out.println("El resultado es: " + resultado);
     }
- }
+}
+
 
